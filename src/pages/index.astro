@@ -1,0 +1,107 @@
+---
+import '../styles/global.css';
+---
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#fff9ef" />
+    <meta name="description" content="Malinka — sala zabaw w Warce przy ul. Puławskiej 4. Małe stopy, wielkie przygody! Sprawdź cennik, zaplanuj urodziny i wpadnij do zabawy." />
+    <title>Malinka — małe stopy, wielka zabawa! | Sala zabaw Warka</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Przejdź do treści</a>
+    <header class="site-header px-5 md:px-12">
+      <a class="brand" href="#" aria-label="Malinka — strona główna"><span class="brand-icon"><img src="/images/logo-malinka.jpg" alt="" width="58" height="58" /></span><span><small>SALA ZABAW</small><strong>Malinka</strong></span></a>
+      <nav class="desktop-nav" aria-label="Menu główne"><a href="#zabawa">Poznaj Malinkę</a><a href="#urodziny">Urodziny</a><a href="#cennik">Cennik</a><a href="#kontakt">Kontakt</a></nav>
+      <a class="button button-small button-dark" href="#kontakt">Wpadnij do nas <span aria-hidden="true">↗</span></a>
+      <button class="menu-toggle" aria-label="Otwórz menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button>
+    </header>
+    <nav id="mobile-menu" class="mobile-menu" aria-label="Menu mobilne" hidden><a href="#zabawa">Poznaj Malinkę</a><a href="#urodziny">Urodziny</a><a href="#cennik">Cennik</a><a href="#kontakt">Kontakt</a></nav>
+    <main id="main">
+      <section class="hero page-pad" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="tiny-spark" aria-hidden="true">✳</span> TWOJE MIEJSCE DO ZABAWY W WARCE</p>
+          <h1 id="hero-title">Sala  <br /><span>pełna zabaw</span><br /><span class="word-play">dla dzieci</span></h1>
+          <p class="hero-description">Tu radość nie mieści się w kieszeni.<br />Za to zmieści się cała w Malince!</p>
+          <div class="hero-actions"><a class="button button-pink" href="#cennik">Wchodzę w to! <span aria-hidden="true">↗</span></a><a class="text-link" href="#zabawa">Poznaj Malinkę <span aria-hidden="true">↓</span></a></div>
+          <p class="hero-address"><span aria-hidden="true">⌖</span> Puławska 4, Warka</p>
+        </div>
+        <div class="hero-visual">
+          <button type="button" class="hero-image-wrap" id="mascot-play" aria-label="Uruchom animację 3D Malinki" aria-pressed="false"><img id="hero-art" src="/images/hero-malinka.png" alt="Uśmiechnięta malinowa maskotka sali zabaw Malinka" width="1536" height="1024" fetchpriority="high" /><span class="play-hint">Psst... kliknij Malinkę! <span aria-hidden="true">✳</span></span></button>
+          <div class="hero-sticker"><span>100%</span><strong>radości!</strong><span class="sticker-smile" aria-hidden="true">☺</span></div>
+          <span class="hero-doodle" aria-hidden="true">✳</span>
+          <div class="hero-caption"><span>DUŻO ŚMIECHU. JESZCZE WIĘCEJ ZABAWY.</span><span aria-hidden="true">↗</span></div>
+        </div>
+      </section>
+      <div class="marquee" aria-label="Zabawa, urodziny, mali odkrywcy, wielkie uśmiechy"><div class="marquee-track" aria-hidden="true">{[0,1,2,3].map(()=> <span>ZABAWA <b>✳</b> URODZINY <b>✳</b> MALI ODKRYWCY <b>✳</b> WIELKIE UŚMIECHY <b>✳</b> </span>)}</div></div>
+      <section id="zabawa" class="intro page-pad section-pad">
+        <p class="eyebrow reveal">CZEŚĆ, TU MALINKA!</p>
+        <div class="intro-grid reveal"><h2>Dzieciństwo?<br /><span>Najlepiej w ruchu.</span></h2><p>Wspinaczka, zjazd prosto do uśmiechu i nurkowanie w basenie z kulkami. W Malince, w samym sercu Warki, małe przygody stają się wielkimi wspomnieniami. A rodzice? Mają chwilę na dobrą kawę lub herbatę.</p></div>
+        <div class="intro-gallery reveal" aria-label="Zdjęcia z sali zabaw">
+          <figure class="intro-photo intro-photo-wide"><img src="/images/sala-zabaw-malinka-wide.png" alt="Dzieci bawiące się przy kolorowym basenie z kulkami, zjeżdżalni i konstrukcji wspinaczkowej" width="1536" height="864" loading="lazy" /></figure>
+          <figure class="intro-photo intro-photo-tall"><img src="/images/sala-zabaw-malinka-climb.png" alt="Dziecko wspinające się po miękkiej, kolorowej konstrukcji do zabawy" width="1024" height="1536" loading="lazy" /></figure>
+        </div>
+        <div class="attraction-tags reveal" aria-label="Atrakcje w Malince"><span>↟ Konstrukcje do wspinania</span><span>↘ Zjeżdżalnie</span><span>∴ Basen z kulkami</span><span>♡ Kawa i herbata dla rodziców</span></div>
+        <div class="play-links">
+          <a href="#cennik" class="play-link reveal"><span class="play-number">01</span><div><h3>Po prostu zabawa.</h3><p>Na godzinę, dwie albo cały dzień.</p></div><span class="circle-arrow" aria-hidden="true">↗</span></a>
+          <a href="#urodziny" class="play-link reveal"><span class="play-number">02</span><div><h3>Urodziny na całego.</h3><p>Wielki dzień. Cała sala dla Was.</p></div><span class="circle-arrow" aria-hidden="true">↗</span></a>
+          <a href="#cennik" class="play-link reveal" id="group-link"><span class="play-number">03</span><div><h3>Razem raźniej!</h3><p>Wspólna przygoda dla grup od 10 dzieci.</p></div><span class="circle-arrow" aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+
+      <section id="urodziny" class="birthday page-pad section-pad" aria-labelledby="birthday-title">
+        <div class="birthday-top"><p class="eyebrow">MAŁY CZŁOWIEK. WIELKI DZIEŃ.</p><span class="outline-pill">URODZINY NA WYŁĄCZNOŚĆ</span></div>
+        <div class="birthday-grid">
+          <div class="reveal"><h2 id="birthday-title">Jeszcze rok<br />więcej.<br /><span>Sto razy<br />więcej frajdy!</span></h2></div>
+          <div class="birthday-right">
+            <div class="party-poster" aria-hidden="true"><span class="party-star">✳</span><span class="party-word">HOP!<br /><i>HOP!</i><br />HURRA!</span><span class="party-seal">TO BĘDZIE<br />WASZ DZIEŃ!</span></div>
+            <div class="birthday-copy reveal"><p>Jedna sala, cała Wasza ekipa i powód, by świętować. Nasz zespół pomoże zorganizować ten wyjątkowy dzień. Zapytaj nas o urodziny na wyłączność — wspólnie ustalimy termin i szczegóły.</p><a class="button button-yellow" href="tel:+48660413072">Zaplanujmy urodziny <span aria-hidden="true">↗</span></a></div>
+          </div>
+        </div>
+        <button id="party-button" class="party-button" aria-label="Uruchom urodzinowe konfetti"><span aria-hidden="true">✳</span> A tak zaczynamy świętowanie! <span aria-hidden="true">↗</span></button>
+        <span class="party-feedback" role="status"></span>
+      </section>
+
+      <section id="cennik" class="pricing page-pad section-pad" aria-labelledby="pricing-title">
+        <div class="section-heading reveal"><div><p class="eyebrow">MAŁY BILET DO WIELKIEJ ZABAWY</p><h2 id="pricing-title">Ile radości<br /><span>wybieracie?</span></h2></div><div class="price-intro"><p>Godzina przygód czy cały dzień frajdy?<br />Wybierzcie swój sposób na Malinkę.</p><div class="price-switch" role="group" aria-label="Wybierz rodzaj cennika"><button type="button" class="active" data-price-mode="weekday" aria-pressed="true">Wt.–czw.</button><button type="button" data-price-mode="weekend" aria-pressed="false">Pt.–nd.</button><button type="button" data-price-mode="group" aria-pressed="false">Grupy</button></div></div></div>
+        <div id="price-panel" aria-live="polite" aria-atomic="true">
+          <p id="price-context" class="price-context">Wejścia indywidualne · wtorek–czwartek · cena za dziecko</p>
+          <div class="price-grid">
+            <article class="price-card reveal"><div class="price-card-top"><span class="price-icon" aria-hidden="true">↗</span><span class="price-index">01 / SZYBKA PRZYGODA</span></div><h3 data-duration="0">1 godzina</h3><p class="price"><span data-price="0">19</span><span>zł</span></p><p class="price-tagline">Mała przerwa. Wielki uśmiech.</p></article>
+            <article class="price-card price-card-pink reveal"><div class="price-card-top"><span class="price-icon" aria-hidden="true">✳</span><span class="price-index">02 / JESZCZE CHWILKĘ!</span></div><h3 data-duration="1">2 godziny</h3><p class="price"><span data-price="1">25</span><span>zł</span></p><p class="price-tagline">Bo zabawa rozkręca się na dobre.</p></article>
+            <article class="price-card price-card-blue reveal"><div class="price-card-top"><span class="price-icon" aria-hidden="true">∞</span><span class="price-index" id="last-price-index">03 / BEZ POŚPIECHU</span></div><h3 data-duration="2">Cały dzień</h3><p class="price"><span data-price="2">38</span><span>zł</span></p><p class="price-tagline" id="last-price-tagline">Tyle czasu na tyle pomysłów.</p></article>
+          </div>
+          <p id="price-note" class="price-note">Po przekroczeniu wybranego czasu: 0,30 zł za każdą kolejną minutę.</p>
+        </div>
+        <details class="discounts"><summary>A dla najmłodszych i dzieci z niepełnosprawnościami? <span aria-hidden="true">+</span></summary><div><p>Maluszki, które jeszcze nie chodzą, wchodzą bezpłatnie.</p><p>Dzieci z orzeczeniem o niepełnosprawności otrzymują 20% zniżki.</p><p class="small-note">Zniżki nie dotyczą urodzin.</p></div></details>
+        <div class="pricing-bottom"><a href="/images/cennik-malinka.jpg" class="text-link" target="_blank" rel="noopener">Zobacz pełny cennik <span aria-hidden="true">↗</span></a><p>Planujecie wizytę? Zadzwońcie i sprawdźcie dostępność sali.</p></div>
+      </section>
+
+      <section id="karta" class="loyalty page-pad section-pad" aria-labelledby="loyalty-title">
+        <div class="loyalty-copy reveal"><p class="eyebrow">DOBRZE JEST WRACAĆ!</p><h2 id="loyalty-title">Raz, dwa, trzy…<br /><span>szóste gratis!</span></h2><p>Zbieraj pieczątki za wizyty w Malince.<br />Szóste wejście dostajesz od nas w prezencie.<br />O kartę lojalnościową zapytaj obsługę.</p><a class="text-link" href="#kontakt">To kiedy się widzimy? <span aria-hidden="true">↗</span></a></div>
+        <div class="loyalty-demo reveal"><div class="loyalty-card"><div class="loyalty-card-heading"><strong>Malinka</strong><span>KARTA<br />MAŁEGO ODKRYWCY</span></div><div class="stamp-grid" aria-label="Demonstracja karty lojalnościowej">{[1,2,3,4,5].map(n=><div class="stamp" data-stamp={n}><span>{n}</span><b aria-hidden="true">☺</b></div>)}<div class="stamp stamp-free"><span>6</span><b>GRATIS!</b></div></div><p>Z każdą wizytą bliżej kolejnej przygody.</p></div><div class="loyalty-demo-actions"><button id="stamp-button" class="button button-dark">Przybij pieczątkę <span aria-hidden="true">↗</span></button><button id="stamp-reset" class="reset-button" hidden>Od nowa ↺</button></div><p id="stamp-status" class="stamp-status" role="status">Wypróbuj kartę: przybij 5 pieczątek.</p><p class="loyalty-disclaimer">To demonstracja. Prawdziwe pieczątki zbierasz w sali zabaw.</p></div>
+      </section>
+
+      <section class="reviews page-pad section-pad" aria-labelledby="reviews-title"><div class="reviews-heading reveal"><p class="eyebrow">MAŁE WSPOMNIENIA. WIELKIE SŁOWA.</p><h2 id="reviews-title">Dzieci chcą wracać.<br /><span>Rodzice też.</span></h2><p>Czystość, bezpieczeństwo i ludzie, którym zależy.<br />Właśnie to doceniają rodzice odwiedzający Malinkę.</p></div><div class="review-grid">
+        <figure class="review-card reveal"><span class="quote-mark" aria-hidden="true">“</span><blockquote>Właściciel Pan Kuba stworzył to miejsce z pasją i sympatią do dzieci. Stale dokupuje nowe zabawki i dba o rozwój przestrzeni dla dzieci.</blockquote><figcaption><span class="review-avatar" aria-hidden="true">W</span><span>Weronika P.<small>O miejscu tworzonym z pasją</small></span></figcaption></figure>
+        <figure class="review-card reveal"><span class="quote-mark" aria-hidden="true">“</span><blockquote>Sala jest bardzo czysta, zadbana i bezpieczna, co dla mnie jako rodzica jest najważniejsze.</blockquote><figcaption><span class="review-avatar" aria-hidden="true">E</span><span>Emil J.<small>O codziennej zabawie</small></span></figcaption></figure>
+        <figure class="review-card reveal"><span class="quote-mark" aria-hidden="true">“</span><blockquote>Obsługa na szóstkę! Impreza urodzinowa zorganizowana i poprowadzona idealnie.</blockquote><figcaption><span class="review-avatar" aria-hidden="true">M</span><span>Magda S.<small>O urodzinach w Malince</small></span></figcaption></figure>
+      </div></section>
+      <section id="kontakt" class="contact page-pad section-pad" aria-labelledby="contact-title">
+        <div class="contact-heading reveal"><p class="eyebrow">JESTEŚMY BLISKO. WPADNIJCIE!</p><h2 id="contact-title">Do zobaczenia<br /><span>w Malince!</span><span class="contact-flower" aria-hidden="true">✳</span></h2></div>
+        <div class="contact-grid">
+          <div class="contact-address reveal"><p class="eyebrow">TUTAJ ZACZYNA SIĘ ZABAWA</p><p class="address-large">ul. Puławska 4<br />05-660 Warka</p><a class="button button-dark" href="https://www.google.com/maps/search/?api=1&amp;query=Sala+zabaw+Malinka+Pu%C5%82awska+4+05-660+Warka" target="_blank" rel="noopener">Pokaż trasę <span aria-hidden="true">↗</span></a></div>
+          <div class="contact-links reveal"><p class="eyebrow">ZADZWOŃ, NAPISZ, PRZYJDŹ</p><a href="tel:+48660413072" class="contact-phone">660 413 072 <span aria-hidden="true">↗</span></a><a href="mailto:salazabawmalinka@gmail.com" class="contact-email">salazabawmalinka@gmail.com <span aria-hidden="true">↗</span></a><p class="availability-note">Przed wizytą zadzwoń i sprawdź dostępność. Podczas urodzin na wyłączność sala może być zarezerwowana.</p></div>
+        </div>
+      </section>
+      <div class="bottom-word" aria-hidden="true">Malinka<span>☺</span></div>
+    </main>
+    <footer class="page-pad site-footer"><span>© {new Date().getFullYear()} Sala zabaw Malinka, Warka</span><a href="#main">Do góry ↑</a></footer>
+    <canvas id="confetti" aria-hidden="true"></canvas>
+    <script src="../scripts/main.js"></script>
+  </body>
+</html>
+
