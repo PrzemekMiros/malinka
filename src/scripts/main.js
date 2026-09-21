@@ -70,7 +70,8 @@ function choosePrices(mode) {
   gsap.fromTo('.price [data-price]', { y: 9, opacity: .3 }, { y: 0, opacity: 1, duration: .35, stagger: .055, overwrite: true });
 }
 document.querySelectorAll('[data-price-mode]').forEach(button => button.addEventListener('click', () => choosePrices(button.dataset.priceMode)));
-document.querySelector('#group-link').addEventListener('click', () => choosePrices('group'));
+const groupLink = document.querySelector('#group-link');
+groupLink?.addEventListener('click', () => choosePrices('group'));
 
 const canvas = document.querySelector('#confetti');
 const ctx = canvas.getContext('2d');
@@ -102,8 +103,9 @@ function drawConfetti(time) {
 function burstAt(element, count) { const rect = element.getBoundingClientRect(); burst(rect.x + rect.width / 2, rect.y + rect.height / 2, count); }
 document.querySelector('#party-button').addEventListener('click', e => { burstAt(e.currentTarget, 100); document.querySelector('.party-feedback').textContent = 'Sto lat i mnóstwo radości!'; });
 const mascotButton = document.querySelector('#mascot-play');
+const mascotArt = document.querySelector('#hero-art');
 let mascotGreetingTimer;
-mascotButton.addEventListener('click', e => {
+function playMascot() {
   clearTimeout(mascotGreetingTimer);
   mascotButton.classList.remove('is-playing');
   void mascotButton.offsetWidth;
@@ -113,13 +115,10 @@ mascotButton.addEventListener('click', e => {
     mascotButton.classList.remove('is-playing');
     mascotButton.setAttribute('aria-pressed', 'false');
   }, 1600);
-  gsap.killTweensOf('#hero-art');
-  gsap.timeline()
-    .to('#hero-art', { y: -18, z: 70, rotationY: -18, rotationX: 9, scale: 1.06, duration: .32, ease: 'power2.out' })
-    .to('#hero-art', { y: 4, z: 25, rotationY: 14, rotationX: -6, duration: .28, ease: 'power1.inOut' })
-    .to('#hero-art', { y: 0, z: 0, rotationY: 0, rotationX: 0, scale: 1, duration: .7, ease: 'elastic.out(1,.45)' });
-  burstAt(e.currentTarget, 40);
-});
+  burstAt(mascotButton, 40);
+}
+mascotButton.addEventListener('click', playMascot);
+mascotArt.addEventListener('click', event => { event.stopPropagation(); playMascot(); });
 
 let stamps = 0;
 const stampButton = document.querySelector('#stamp-button');
