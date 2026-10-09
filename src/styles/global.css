@@ -72,3 +72,11 @@ html,body{overflow-x:clip}.brand-icon{height:53px}.brand-icon img{width:110px;he
 .faq-answer p{font-size:16px;line-height:1.8}
 .faq-answer a{display:inline-block;margin-top:12px;font-size:14px;font-weight:800;text-decoration:underline;text-decoration-color:var(--pink);text-underline-offset:4px}
 @media(max-width:760px){.faq-layout{grid-template-columns:1fr;gap:35px}.faq-intro{position:static}.faq-intro h2{margin-top:14px}.faq-intro .text-link{margin-top:20px}.faq-list summary{font-size:17px;padding:19px 0}.faq-answer{padding:0 42px 21px 0}.faq-answer p{font-size:15px}}
+
+/* Keep the header aligned with the page gutter at intermediate widths. */
+.header-content{width:min(1320px,calc(100% - clamp(48px,8.4vw,160px)))}
+@media(max-width:760px){.header-content{width:100%}}
+
+/* Give both parts of the hero the same safe side space as the header. */
+.hero-content{width:min(1320px,calc(100% - clamp(48px,8.4vw,160px)))}
+@media(max-width:760px){.hero-content{width:100%}}

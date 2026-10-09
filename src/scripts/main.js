@@ -117,8 +117,10 @@ function playMascot() {
   }, 1600);
   burstAt(mascotButton, 40);
 }
-mascotButton.addEventListener('click', playMascot);
-mascotArt.addEventListener('click', event => { event.stopPropagation(); playMascot(); });
+if (mascotButton && mascotArt) {
+  mascotButton.addEventListener('click', playMascot);
+  mascotArt.addEventListener('click', event => { event.stopPropagation(); playMascot(); });
+}
 
 let stamps = 0;
 const stampButton = document.querySelector('#stamp-button');
