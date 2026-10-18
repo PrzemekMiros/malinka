@@ -29,6 +29,63 @@ import '../styles/global.css';
     <title>Sala Zabaw Malinka | Warka</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="google-site-verification" content="dZYh-2D_7ciqW8Ap5kLFhhAJoIwQC4k1YFJJelr0awQ" />
+    <script type="application/ld+json" is:inline>
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://salazabawmalinka.pl/#website",
+            "url": "https://salazabawmalinka.pl/",
+            "name": "Sala zabaw Malinka",
+            "inLanguage": "pl-PL",
+            "publisher": {
+              "@id": "https://salazabawmalinka.pl/#business"
+            }
+          },
+          {
+            "@type": "LocalBusiness",
+            "@id": "https://salazabawmalinka.pl/#business",
+            "name": "Sala zabaw Malinka",
+            "description": "Malinka - Sala zabaw w Warce przy ul. Puławskiej 4. Sprawdź cennik, zaplanuj urodziny i wpadnij do zabawy.",
+            "url": "https://salazabawmalinka.pl/",
+            "image": "https://salazabawmalinka.pl/images/opengraph.png",
+            "logo": "https://salazabawmalinka.pl/images/Logo.png",
+            "telephone": "+48660413072",
+            "email": "salazabawmalinka@gmail.com",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "ul. Puławska 4",
+              "postalCode": "05-660",
+              "addressLocality": "Warka",
+              "addressCountry": "PL"
+            },
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "https://schema.org/Tuesday",
+                  "https://schema.org/Wednesday",
+                  "https://schema.org/Thursday",
+                  "https://schema.org/Friday"
+                ],
+                "opens": "12:00",
+                "closes": "19:00"
+              },
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "https://schema.org/Saturday",
+                  "https://schema.org/Sunday"
+                ],
+                "opens": "10:00",
+                "closes": "20:00"
+              }
+            ]
+          }
+        ]
+      }
+    </script>
   </head> 
   <body>
     <a class="skip-link" href="#main">Przejdź do treści</a>
@@ -91,7 +148,7 @@ import '../styles/global.css';
         <div class="section-container">
         <div class="birthday-top"><p class="eyebrow">MAŁY CZŁOWIEK. WIELKI DZIEŃ.</p><span class="outline-pill">URODZINY NA WYŁĄCZNOŚĆ</span></div>
         <div class="birthday-grid">
-          <div class="birthday-left reveal"><h2 id="birthday-title">Urodziny od A do Z.<br /><span>My zajmiemy się<br />resztą!</span></h2><div class="birthday-copy"><p>Jedna sala, cała Wasza ekipa i powód, by świętować. Nasz zespół pomoże zorganizować ten wyjątkowy dzień. Zapytaj nas o urodziny na wyłączność — wspólnie ustalimy termin i szczegóły.</p><a class="button button-yellow" href="/images/Urodziny-w-Malince.pdf">Zaplanujmy urodziny <span aria-hidden="true">↗</span></a></div></div>
+          <div class="birthday-left reveal"><h2 id="birthday-title">Urodziny od A do Z.<br /><span>My zajmiemy się<br />resztą!</span></h2><div class="birthday-copy"><p>Jedna sala, cała Wasza ekipa i powód, by świętować. Nasz zespół pomoże zorganizować ten wyjątkowy dzień. Zapytaj nas o urodziny na wyłączność — wspólnie ustalimy termin i szczegóły.</p><a class="button button-yellow" href="/images/Urodziny-w-Malince.pdf" target="_blank">Zaplanujmy urodziny <span aria-hidden="true">↗</span></a></div></div>
           <div class="birthday-right reveal"><div class="party-poster" aria-hidden="true"><span class="party-star">✳</span><span class="party-word">HOP!<br /><i>HOP!</i><br />HURRA!</span><span class="party-seal">TO BĘDZIE<br />WASZ DZIEŃ!</span></div></div>
         </div>
         <button id="party-button" class="party-button" aria-label="Uruchom urodzinowe konfetti"><span aria-hidden="true">✳</span> Zacznijmy świętowanie! <span aria-hidden="true">↗</span></button>
@@ -128,7 +185,7 @@ import '../styles/global.css';
         <figure class="review-card reveal"><span class="quote-mark" aria-hidden="true">“</span><blockquote>Sala jest bardzo czysta, zadbana i bezpieczna, co dla mnie jako rodzica jest najważniejsze.</blockquote><figcaption><span class="review-avatar" aria-hidden="true">E</span><span>Emil J.</span></figcaption></figure>
         <figure class="review-card reveal"><span class="quote-mark" aria-hidden="true">“</span><blockquote>Obsługa na szóstkę! Impreza urodzinowa zorganizowana i poprowadzona idealnie.</blockquote><figcaption><span class="review-avatar" aria-hidden="true">M</span><span>Magda S.</span></figcaption></figure>
       </div></div></section>
-      <section id="faq" class="faq page-pad section-pad" aria-labelledby="faq-title">
+      <section id="faq" class="faq page-pad section-pad" aria-labelledby="faq-title" itemscope itemtype="https://schema.org/FAQPage" itemid="https://salazabawmalinka.pl/#faq">
         <div class="section-container faq-layout">
           <div class="faq-intro reveal">
             <p class="eyebrow">DOBRZE WIEDZIEĆ</p>
@@ -136,29 +193,29 @@ import '../styles/global.css';
             <a class="text-link" href="tel:+48660413072">Zadzwoń do nas <span aria-hidden="true">↗</span></a>
           </div>
           <div class="faq-list reveal">
-            <details>
-              <summary><span>W jakich godzinach jest otwarta sala?</span><span class="faq-toggle" aria-hidden="true">+</span></summary>
-              <div class="faq-answer"><p>W poniedziałki sala jest zamknięta. Od wtorku do piątku zapraszamy w godz. 12:00–19:00, a w soboty i niedziele w godz. 10:00–20:00.</p></div>
+            <details itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+              <summary><span itemprop="name">W jakich godzinach jest otwarta sala?</span><span class="faq-toggle" aria-hidden="true">+</span></summary>
+              <div class="faq-answer" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer"><p itemprop="text">W poniedziałki sala jest zamknięta. Od wtorku do piątku zapraszamy w godz. 12:00–19:00, a w soboty i niedziele w godz. 10:00–20:00.</p></div>
             </details>
-            <details>
-              <summary><span>Ile kosztuje wejście?</span><span class="faq-toggle" aria-hidden="true">+</span></summary>
-              <div class="faq-answer"><p>Cena zależy od dnia i długości pobytu. Od wtorku do czwartku wejście kosztuje 19 zł za godzinę, 25 zł za 2 godziny lub 38 zł za cały dzień. Od piątku do niedzieli: 21 zł, 27 zł lub 40 zł. Dla grup od 10 dzieci obowiązuje osobny cennik.</p><a href="#cennik">Zobacz pełny cennik <span aria-hidden="true">↗</span></a></div>
+            <details itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+              <summary><span itemprop="name">Ile kosztuje wejście?</span><span class="faq-toggle" aria-hidden="true">+</span></summary>
+              <div class="faq-answer" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer"><p itemprop="text">Cena zależy od dnia i długości pobytu. Od wtorku do czwartku wejście kosztuje 19 zł za godzinę, 25 zł za 2 godziny lub 38 zł za cały dzień. Od piątku do niedzieli: 21 zł, 27 zł lub 40 zł. Dla grup od 10 dzieci obowiązuje osobny cennik.</p><a href="#cennik">Zobacz pełny cennik <span aria-hidden="true">↗</span></a></div>
             </details>
-            <details>
-              <summary><span>Czy są dostępne zniżki?</span><span class="faq-toggle" aria-hidden="true">+</span></summary>
-              <div class="faq-answer"><p>Dzieci, które jeszcze nie chodzą, wchodzą bezpłatnie. Dzieci z orzeczeniem o niepełnosprawności otrzymują 20% zniżki. Zniżki nie dotyczą urodzin.</p></div>
+            <details itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+              <summary><span itemprop="name">Czy są dostępne zniżki?</span><span class="faq-toggle" aria-hidden="true">+</span></summary>
+              <div class="faq-answer" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer"><p itemprop="text">Dzieci, które jeszcze nie chodzą, wchodzą bezpłatnie. Dzieci z orzeczeniem o niepełnosprawności otrzymują 20% zniżki. Zniżki nie dotyczą urodzin.</p></div>
             </details>
-            <details>
-              <summary><span>Czy można zorganizować urodziny w Malince?</span><span class="faq-toggle" aria-hidden="true">+</span></summary>
-              <div class="faq-answer"><p>Tak, organizujemy urodziny na wyłączność. Zadzwoń pod numer <a href="tel:+48660413072">660 413 072</a>, żeby ustalić termin i szczegóły.</p></div>
+            <details itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+              <summary><span itemprop="name">Czy można zorganizować urodziny w Malince?</span><span class="faq-toggle" aria-hidden="true">+</span></summary>
+              <div class="faq-answer" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer"><p itemprop="text">Tak, organizujemy urodziny na wyłączność. Zadzwoń pod numer <a href="tel:+48660413072">660 413 072</a>, żeby ustalić termin i szczegóły.</p></div>
             </details>
-            <details>
-              <summary><span>Jak działa karta lojalnościowa?</span><span class="faq-toggle" aria-hidden="true">+</span></summary>
-              <div class="faq-answer"><p>Zbieraj pieczątki za wizyty w Malince. Szóste wejście otrzymujesz gratis. O kartę zapytaj obsługę na miejscu.</p></div>
+            <details itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+              <summary><span itemprop="name">Jak działa karta lojalnościowa?</span><span class="faq-toggle" aria-hidden="true">+</span></summary>
+              <div class="faq-answer" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer"><p itemprop="text">Zbieraj pieczątki za wizyty w Malince. Szóste wejście otrzymujesz gratis. O kartę zapytaj obsługę na miejscu.</p></div>
             </details>
-            <details>
-              <summary><span>Gdzie znajduje się sala zabaw?</span><span class="faq-toggle" aria-hidden="true">+</span></summary>
-              <div class="faq-answer"><p>Znajdziesz nas przy ul. Puławskiej 4 w Warce, kod pocztowy 05-660.</p><a href="#kontakt">Dane kontaktowe i dojazd <span aria-hidden="true">↗</span></a></div>
+            <details itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+              <summary><span itemprop="name">Gdzie znajduje się sala zabaw?</span><span class="faq-toggle" aria-hidden="true">+</span></summary>
+              <div class="faq-answer" itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer"><p itemprop="text">Znajdziesz nas przy ul. Puławskiej 4 w Warce, kod pocztowy 05-660.</p><a href="#kontakt">Dane kontaktowe i dojazd <span aria-hidden="true">↗</span></a></div>
             </details>
           </div>
         </div>
