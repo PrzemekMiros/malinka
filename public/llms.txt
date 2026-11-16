@@ -1,0 +1,18 @@
+# Sala zabaw Malinka
+
+> Sala zabaw dla dzieci w Warce, przy ul. Puławskiej 4.
+
+Malinka oferuje dzieciom wspinaczkę, zjeżdżalnie i basen z kulkami. Organizuje również urodziny na wyłączność. Godziny otwarcia, cennik i dostępność mogą ulec zmianie — przed wizytą zadzwoń, aby potwierdzić szczegóły.
+
+## Informacje
+
+- [Opis strony w Markdown](https://salazabawmalinka.pl/index.md): atrakcje, aktualny cennik, godziny otwarcia i kontakt.
+- [Pełny cennik (PDF)](https://salazabawmalinka.pl/images/Cennik-Malinka.pdf)
+- [Informacje o urodzinach (PDF)](https://salazabawmalinka.pl/images/Urodziny-w-Malince.pdf)
+- [Mapa strony](https://salazabawmalinka.pl/sitemap.xml)
+
+## Kontakt
+
+- Telefon: [+48 660 413 072](tel:+48660413072)
+- E-mail: [salazabawmalinka@gmail.com](mailto:salazabawmalinka@gmail.com)
+- Adres: ul. Puławska 4, 05-660 Warka

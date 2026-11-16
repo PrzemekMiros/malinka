@@ -1,0 +1,22 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "Sala zabaw Malinka",
+    "identifier": "salazabawmalinka.pl"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:salazabawmalinka.pl:web:site-content",
+      "displayName": "Informacje o sali zabaw Malinka",
+      "type": "text/markdown",
+      "url": "https://salazabawmalinka.pl/index.md",
+      "description": "Informacje dla rodzin o atrakcjach, cenniku, godzinach otwarcia, urodzinach i kontakcie z salą zabaw Malinka w Warce.",
+      "tags": ["sala zabaw", "Warka", "dzieci", "urodziny", "cennik"],
+      "representativeQueries": [
+        "Jaki jest cennik sali zabaw Malinka w Warce?",
+        "Jakie atrakcje są dostępne w sali zabaw Malinka?",
+        "Jak zorganizować urodziny w Malince?"
+      ]
+    }
+  ]
+}

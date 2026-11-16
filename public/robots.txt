@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://salazabawmalinka.pl/sitemap.xml
+Agentmap: https://salazabawmalinka.pl/.well-known/ard.json
