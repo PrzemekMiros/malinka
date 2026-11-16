@@ -57,6 +57,7 @@ Karta lojalnościowa na stronie jest demonstracją, nie zastępuje fizycznych pi
 - `src/pages/index.astro` — treść i struktura.
 - `src/styles/global.css` — wygląd i responsywność.
 - `src/scripts/main.js` — animacje, ceny i interakcje.
-- `public/images` — materiały marki i ilustracja.
+- `src/images` — zdjęcia i logo przetwarzane przez komponent Astro `Image`.
+- `public/images` — pliki dostępne pod stałymi adresami, w tym PDF-y i grafiki metadanych.
 
 Projekt jest zarejestrowany w Sites. `.openai/hosting.json` zachowuje identyfikator, aby można było wznowić publikację tego samego projektu. Publikacja w tej sesji nie została ukończona z powodu blokady zapisu historii projektu przez Windows.

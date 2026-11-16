@@ -1,4 +1,14 @@
 ---
+import { Image } from 'astro:assets';
+import logo from '../images/Logo.png';
+import heroImage from '../images/3.png';
+import galleryImage1 from '../images/10.png';
+import galleryImage2 from '../images/11.png';
+import galleryImage3 from '../images/1.png';
+import galleryImage4 from '../images/9.png';
+import galleryImage5 from '../images/12.png';
+import galleryImage6 from '../images/13.png';
+import birthdayRoomImage from '../images/sala.jpg';
 import '../styles/global.css';
 ---
 <!doctype html>
@@ -94,7 +104,7 @@ import '../styles/global.css';
     <a class="skip-link" href="#main" title="Przejdź do głównej treści">Przejdź do treści</a>
     <header class="site-header">
       <div class="section-container header-content">
-      <a class="brand" href="#" aria-label="Malinka — strona główna" title="Strona główna sali zabaw Malinka"><img class="brand-logo" src="/images/Logo.png" alt="Sala zabaw Malinka" width="2552" height="882" /></a>
+      <a class="brand" href="#" aria-label="Malinka — strona główna" title="Strona główna sali zabaw Malinka"><Image class="brand-logo" src={logo} alt="Sala zabaw Malinka" widths={[155, 230, 460]} sizes="(max-width: 760px) 145px, (max-width: 1640px) 14vw, 230px" format="webp" quality={82} /></a>
       <nav class="desktop-nav" aria-label="Menu główne"><a href="#zabawa" title="Poznaj atrakcje sali zabaw">Poznaj Malinkę</a><a href="#urodziny" title="Informacje o urodzinach">Urodziny</a><a href="#cennik" title="Sprawdź cennik">Cennik</a><a href="#faq" title="Najczęstsze pytania">FAQ</a><a href="#kontakt" title="Dane kontaktowe i dojazd">Kontakt</a></nav>
       <a class="button button-small button-dark" href="#kontakt" title="Przejdź do danych kontaktowych">Wpadnij do nas <span aria-hidden="true">↗</span></a>
       <button class="menu-toggle" aria-label="Otwórz menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button>
@@ -113,7 +123,7 @@ import '../styles/global.css';
           <p class="hero-address"><span aria-hidden="true">⌖</span> Puławska 4, Warka</p>
         </div>
         <div class="hero-visual">
-         <img id="hero-art" src="/images/3.png" alt="Sala zabaw w Warce - Malinka" width="1536" height="1024" fetchpriority="high" />
+         <Image id="hero-art" src={heroImage} alt="Sala zabaw w Warce - Malinka" widths={[640, 960, 1280, 1536]} sizes="(max-width: 760px) 100vw, 50vw" format="webp" quality={82} priority />
           <div class="hero-sticker"><span>100%</span><strong>radości!</strong><span class="sticker-smile" aria-hidden="true">☺</span></div>
           <span class="hero-doodle" aria-hidden="true">✳</span>
           <div class="hero-caption"><span>DUŻO ŚMIECHU. JESZCZE WIĘCEJ ZABAWY.</span><span aria-hidden="true">↗</span></div>
@@ -128,14 +138,14 @@ import '../styles/global.css';
         <p class="eyebrow reveal">CZEŚĆ, TU MALINKA!</p>
         <div class="intro-grid reveal"><h2>Dzieciństwo?<br /><span>Najlepiej w ruchu.</span></h2><p>Wspinaczka, zjazd prosto do uśmiechu i nurkowanie w basenie z kulkami. W Malince, w samym sercu Warki, małe przygody stają się wielkimi wspomnieniami. A rodzice? Mają chwilę na dobrą kawę lub herbatę.</p></div>
         <div class="intro-gallery reveal">
-          <figure class="intro-photo intro-photo-wide"><img src="/images/10.png" alt="Dzieci bawiące się przy kolorowym basenie z kulkami w sali zabaw Malinka w Warce" width="1536" height="864" loading="lazy" /></figure>
-          <figure class="intro-photo intro-photo-tall"><img src="/images/11.png" alt="Dziecko wspinające się po miękkiej, kolorowej konstrukcji do zabawy" width="1024" height="1536" loading="lazy" /></figure>
+          <figure class="intro-photo intro-photo-wide"><Image src={galleryImage1} alt="Dzieci bawiące się przy kolorowym basenie z kulkami w sali zabaw Malinka w Warce" widths={[400, 640, 960, 1280, 1536]} sizes="(max-width: 760px) 50vw, 60vw" format="webp" quality={78} loading="lazy" /></figure>
+          <figure class="intro-photo intro-photo-tall"><Image src={galleryImage2} alt="Dziecko wspinające się po miękkiej, kolorowej konstrukcji do zabawy" widths={[300, 480, 720, 960]} sizes="(max-width: 760px) 50vw, 30vw" format="webp" quality={78} loading="lazy" /></figure>
         </div>
         <div class="intro-gallery-more reveal">
-          <figure class="intro-photo intro-photo-wide"><img src="/images/1.png" alt="Tunel wspinaczkowy z siatkami i kolorowymi przeszkodami w Warce" loading="lazy" /></figure>
-          <figure class="intro-photo intro-photo-tall"><img src="/images/9.png" alt="Kolorowe schody do wspinania w sali zabaw w Warce" loading="lazy" /></figure>
-          <figure class="intro-photo intro-photo-wide"><img src="/images/12.png" alt="Miękka strefa do skakania i zabawy w Malince" loading="lazy" /></figure>
-          <figure class="intro-photo intro-photo-tall"><img src="/images/13.png" alt="Kręta niebiesko-zielona zjeżdżalnia w sali zabaw w Warce" loading="lazy" /></figure>
+          <figure class="intro-photo intro-photo-wide"><Image src={galleryImage3} alt="Tunel wspinaczkowy z siatkami i kolorowymi przeszkodami w Warce" widths={[400, 640, 960, 1280, 1536]} sizes="(max-width: 760px) 50vw, 25vw" format="webp" quality={78} loading="lazy" /></figure>
+          <figure class="intro-photo intro-photo-tall"><Image src={galleryImage4} alt="Kolorowe schody do wspinania w sali zabaw w Warce" widths={[300, 480, 720, 960]} sizes="(max-width: 760px) 50vw, 25vw" format="webp" quality={78} loading="lazy" /></figure>
+          <figure class="intro-photo intro-photo-wide"><Image src={galleryImage5} alt="Miękka strefa do skakania i zabawy w Malince" widths={[400, 640, 960, 1280, 1536]} sizes="(max-width: 760px) 50vw, 25vw" format="webp" quality={78} loading="lazy" /></figure>
+          <figure class="intro-photo intro-photo-tall"><Image src={galleryImage6} alt="Kręta niebiesko-zielona zjeżdżalnia w sali zabaw w Warce" widths={[300, 480, 720, 960]} sizes="(max-width: 760px) 50vw, 25vw" format="webp" quality={78} loading="lazy" /></figure>
         </div>
         <div class="attraction-cards reveal">
           <article class="attraction-card attraction-card-climb"><div class="attraction-card-top"><span class="attraction-number">01</span><span class="attraction-icon" aria-hidden="true"><svg viewBox="0 0 56 56" fill="none"><path d="M12 43V34h9v-10h9V14h14" /><path d="m38 9 6 5-6 5" /></svg></span></div><h3 class="h4">W górę po przygodę</h3><p>Konstrukcje do wspinania dla małych odkrywców pełnych energii.</p></article>
@@ -149,10 +159,11 @@ import '../styles/global.css';
     
       <section id="urodziny" class="birthday page-pad section-pad" aria-labelledby="birthday-title">
         <div class="section-container">
-        <div class="birthday-top"><p class="eyebrow">MAŁY CZŁOWIEK. WIELKI DZIEŃ.</p><span class="outline-pill">URODZINY NA WYŁĄCZNOŚĆ</span></div>
         <div class="birthday-grid">
-          <div class="birthday-left reveal"><h2 id="birthday-title">Urodziny od A do Z.<br /><span>My zajmiemy się<br />resztą!</span></h2><div class="birthday-copy"><p>Jedna sala, cała Wasza ekipa i powód, by świętować. Nasz zespół pomoże zorganizować ten wyjątkowy dzień. Zapytaj nas o urodziny na wyłączność — wspólnie ustalimy termin i szczegóły.</p><a class="button button-yellow" href="/images/Urodziny-w-Malince.pdf" title="Otwórz informacje o urodzinach w pliku PDF" target="_blank">Zaplanujmy urodziny <span aria-hidden="true">↗</span></a></div></div>
-          <div class="birthday-right reveal"><div class="party-poster" aria-hidden="true"><span class="party-star">✳</span><span class="party-word">HOP!<br /><i>HOP!</i><br />HURRA!</span><span class="party-seal">TO BĘDZIE<br />WASZ DZIEŃ!</span></div></div>
+          <div class="birthday-left reveal">
+            <p class="eyebrow !mb-6">MAŁY CZŁOWIEK. WIELKI DZIEŃ.</p>
+            <h2 id="birthday-title">Urodziny od A do Z.<br /><span>My zajmiemy się<br />resztą!</span></h2><div class="birthday-copy"><p>Jedna sala, cała Wasza ekipa i powód, by świętować. Nasz zespół pomoże zorganizować ten wyjątkowy dzień. Zapytaj nas o urodziny na wyłączność — wspólnie ustalimy termin i szczegóły.</p><a class="button button-yellow" href="/images/Urodziny-w-Malince.pdf" title="Otwórz informacje o urodzinach w pliku PDF" target="_blank">Zaplanujmy urodziny <span aria-hidden="true">↗</span></a></div></div>
+          <div class="birthday-right reveal"><div class="party-poster birthday-photo"><Image class="birthday-photo-image" src={birthdayRoomImage} alt="Wejście do sali urodzinowej Malinki z kolorowym napisem i kotarą" widths={[320, 480, 640, 800]} sizes="(max-width: 760px) calc(100vw - 48px), 45vw" format="webp" quality={82} loading="lazy" /><span class="party-star" aria-hidden="true">✳</span><span class="party-seal" aria-hidden="true">TO BĘDZIE<br />WASZ DZIEŃ!</span></div></div>
         </div>
         <button id="party-button" class="party-button" aria-label="Uruchom urodzinowe konfetti"><span aria-hidden="true">✳</span> Zacznijmy świętowanie! <span aria-hidden="true">↗</span></button>
         <span class="party-feedback" role="status"></span>
